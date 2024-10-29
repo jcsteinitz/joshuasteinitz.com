@@ -347,4 +347,8 @@ p {
   .nav-list li a {
     font-size: 0.9rem;
   }
+
+  .arrow-container {
+    display: none;
+  }
 }

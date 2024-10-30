@@ -281,7 +281,6 @@ p {
   opacity: 0;
   width: 15px;
   animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  cursor: pointer;
   height: 20px;
   position: absolute;
   bottom: 10px;

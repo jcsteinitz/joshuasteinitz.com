@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: var(--white);
+  background-color: var(--purple);
   overflow-x: hidden;
 }
 
@@ -52,6 +52,15 @@ p {
   padding-right: 0.9rem;
 }
 
+.content-wrapper {
+  background-color: var(--white);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #headshot {
   margin-top: 1rem;
   width: 15rem;
@@ -75,6 +84,15 @@ p {
   padding: 2rem 1rem;
   text-align: left;
   background-color: var(--white);
+}
+
+.experience-wrapper {
+  background-color: var(--white);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .experience h2 {
@@ -137,7 +155,7 @@ p {
 
 .projects {
   background-color: var(--lavender);
-  padding: 2rem 1rem;
+  padding: 1.9rem 1rem;
   width: 100%;
   max-width: 760px;
   text-align: center;
@@ -179,6 +197,11 @@ p {
   padding: 1.5rem;
   margin: 1rem auto;
   transition: transform 0.3s;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .project-card:hover {
@@ -310,7 +333,8 @@ p {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  min-height: 7vh;
+  height: 7vh;
+  min-height: 45px;
   box-sizing: border-box;
   padding-right: 2vw;
 }
@@ -351,4 +375,38 @@ p {
   .arrow-container {
     display: none;
   }
+}
+
+.article {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  padding: 1.25rem;
+  background-color: var(--lavender);
+  border-radius: 7px;
+}
+
+.article h4 {
+  font-family: "Rubik", sans-serif;
+  color: var(--dark);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.article p {
+  font-family: "Rubik", sans-serif;
+  color: var(--dark);
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.article-link {
+  font-family: "Rubik", sans-serif;
+  color: var(--purple);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.article-link:hover {
+  text-decoration: underline;
 }

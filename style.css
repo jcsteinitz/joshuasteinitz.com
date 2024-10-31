@@ -4,6 +4,7 @@
   --purple: #751cff;
   --dark: #282d38;
   --light: #4c556a;
+  scroll-behavior: smooth;
 }
 
 * {

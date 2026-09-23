@@ -60,9 +60,14 @@ a {
   font-weight: 500;
   text-decoration: none;
 }
-.nav-list a:hover,
 .nav-list a:focus-visible {
   color: var(--accent);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .nav-list a:hover {
+    color: var(--accent);
+  }
 }
 .hero,
 .section,

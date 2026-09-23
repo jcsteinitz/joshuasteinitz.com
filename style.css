@@ -14,7 +14,11 @@
   padding: 0;
 }
 body {
-  background: var(--paper);
+  background: linear-gradient(
+    to bottom,
+    var(--paper) 0 calc(100% - 32rem),
+    var(--ink) calc(100% - 32rem) 100%
+  );
   color: var(--ink);
   font-family: "Rubik", sans-serif;
   line-height: 1.6;

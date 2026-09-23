@@ -18,6 +18,7 @@ body {
   color: var(--ink);
   font-family: "Rubik", sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 a {
   color: inherit;
@@ -779,7 +780,19 @@ a.project-card:focus-visible {
 }
 
 html {
-  background: var(--paper);
+  background: linear-gradient(
+    to bottom,
+    var(--paper) 0 50%,
+    var(--ink) 50% 100%
+  ) fixed;
+  overscroll-behavior-x: none;
+}
+
+@supports (overflow: clip) {
+  html,
+  body {
+    overflow-x: clip;
+  }
 }
 .footer {
   background-color: #eeebf3;

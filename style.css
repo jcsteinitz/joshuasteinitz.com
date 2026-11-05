@@ -451,6 +451,87 @@ h2 {
   }
 }
 
+/* Project case studies */
+.case-page {
+  background: var(--paper);
+}
+.case-main {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: clamp(5rem, 10vw, 8rem) 28px 7rem;
+}
+.case-main h1 {
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 0.98;
+  margin-bottom: 1.5rem;
+}
+.case-lede {
+  color: var(--muted);
+  font-size: clamp(1.2rem, 2.5vw, 1.55rem);
+  max-width: 760px;
+}
+.case-meta {
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 3rem 0 4rem;
+  padding: 1.5rem 0;
+}
+.case-meta dt {
+  color: var(--accent);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+.case-meta dd {
+  color: var(--muted);
+}
+.case-section {
+  margin-top: 4rem;
+}
+.case-section h2 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin-bottom: 1.2rem;
+}
+.case-section h3 {
+  font-size: 1.35rem;
+  margin: 2rem 0 0.6rem;
+}
+.case-section p,
+.case-section li {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+.case-section p + p {
+  margin-top: 1rem;
+}
+.case-section ul {
+  display: grid;
+  gap: 0.7rem;
+  margin: 1rem 0 0 1.25rem;
+}
+.case-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+.case-note {
+  background: var(--surface);
+  border-left: 4px solid var(--accent);
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+}
+@media (max-width: 620px) {
+  .case-meta {
+    grid-template-columns: 1fr;
+  }
+}
+
 .intro {
   font-size: clamp(1.1rem, 1.8vw, 1.4rem);
 }

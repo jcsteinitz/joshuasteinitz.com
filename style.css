@@ -923,3 +923,19 @@ html {
   margin-top: 1.5rem;
   padding-top: 0;
 }
+
+@media (min-width: 761px) {
+  .hero {
+    min-height: 680px;
+    padding-bottom: 4.75rem;
+    padding-top: 4.75rem;
+  }
+  .education {
+    display: block;
+    margin-top: 2rem;
+  }
+  .education-label {
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+}
